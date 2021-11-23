@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "graphic-psyco";
+    src: url(../asset/fonts/graphicpstco.ttf);
+}
+* {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Titillium Web', sans-serif;
+}  
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .gridIndex {
+        display: grid;
+        grid-template-areas:
+        "logo"
+        "nav"
+        "main"
+        "footer";
+        grid-template-columns: 360px;
+        grid-template-rows: 55px 55px auto 200px;
+    }
+    .logoHeader {
+        grid-area: logo;
+        background-color: white;
+        top: 0px;
+    }
+    nav {
+        grid-area: nav;
+        background-color: white;
+        top: 55px;
+    }
+    main {
+        grid-area: main;
+    }
+    .mainBg {
+        background-color: black;
+    }
+    footer {
+        grid-area: footer;
+        font-size: 16px;
+    }
+    .flex {
+        display: flex;
+    }
+    header nav ul li {
+        display: inline-block;
+        font-size: 11px;
+        top: 10px;
+        bottom: 10px;
+    }
+    .flexJustifyLogo {
+        justify-content: center;
+    }
+    .img--index {
+        height: 239px;
+        width: 355px;
+    }
+    .footer--logo {
+        padding: 10px;
+    }
+    .footer--contacto {
+        padding: 15px;
+    } 
+    .footer--txt {
+        font-size: 10px;
+    }
+    .footer--rrss {
+        padding: 30px;
+    }
+    footer div a {
+        display: inline-block;
+    }
+    /* .border {
+        border: 1px solid black; 
+    } */
+    .anchoVideoMob {
+        width: 100%;
+    }
+    .anchoImgMob {
+        width: 100%;
+    }
+    .textoVivo{
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+        background-color: black;
+    }
+    .formatoRepro {
+        top: 10px;
+        padding-bottom: 100px;
+        width: 100%;
+    }
+    .textoContacto {
+        margin-left: 30px;
+        color: white;
+        height: 2px;
+        width: 90%;
+    }
+    .formularioContacto { 
+        padding-left: 30px;
+        color: white;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .paginaContacto {
+        padding-top: 10px;
+    }
+    .mainHistoria {
+        font-size: 20px;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .fuenteHistoria {
+        color: white;
+        margin-right: 15px;
+    }
+    .imgHistoria {
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .gridIndex {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 70px 1fr 100px;
+    }
+    header {
+        grid-area: header;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    main {
+        grid-area: main;
+        background-color: black;
+        margin-top: 50px;
+    }
+    footer {
+        grid-area: footer;
+    }
+    .flex {
+        display: flex;
+    }
+    .flexJustify {
+        justify-content: space-around;
+    }
+    .gridHeader {
+        display: grid;
+        grid-template-areas:
+        "div nav nav nav";
+        grid-template-rows: 100%;
+        grid-template-columns: 25% 75% ;
+    }
+    header nav ul li {
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 23px;
+        position: relative;
+        top: 10px;
+        bottom: 10px;
+    }
+    .flexJustify {
+        justify-content: space-around;
+    }
+    .flexJustifyLogo {
+        justify-content: stretch;
+    }
+    .img--index {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    footer div {
+        display: inline-block;
+        position: relative;
+    }
+    .footer--logo {
+        top: 10px;
+        left: 25px;
+        bottom: 10px;
+    }
+    .footer--contacto {
+        left: 700px;
+    }
+    .footer--txt {
+        font-size: 10px;
+    }
+    .footer--rrss {
+        left: 900px;
+        top: 10px;
+        display: inline-block;
+    }
+    .anchoVideoDsk {
+        width: 49%;
+    }
+    .anchoImg {
+        width: 700px;
+    }
+    .textoVivo{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    }
+    .logoHeader {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .navHeader {
+        padding-top: 10px;
+    }
+    .formatoRepro {
+        top: 10px;
+        padding-bottom: 100px;
+        width: 30%;
+    }
+    .formatoDiscografia {
+    margin-left: 125px;
+    }
+    .paginaContacto {
+        font-size: 20px;
+        padding-top: 30px;    
+        padding-left: 50px;
+    }
+    .formularioContacto { 
+        padding-left: 790px;
+        padding-bottom: 50px;
+        color: white;
+    } 
+    .textoContacto {
+        margin-left: 150px;
+        color: white;
+        height: 2px;
+        width: 450px;
+    }
+    .mainHistoria {
+        font-size: 24px;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .fuenteHistoria {
+        color: white;
+        margin-right: 15px;
+    }
+}
