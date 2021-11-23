@@ -252,4 +252,24 @@
         color: white;
         margin-right: 15px;
     }
+    .animacionLogo {
+        animation-duration: 2s;
+        animation-name: slidein;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 90%;
+          width: 60%
+        }
+        to {
+          margin-left: 0%;
+          width: 60%;
+        }
+      }
+    .bgSelector{
+        transition: all 1s;
+    }
+    .bgSelector:hover {
+        background-color: rgba(240, 232, 232, 0.961);
+    }
 }
